@@ -17,6 +17,7 @@
 ## 部署 ##
 NarakaOptimizerTool 的编译依赖 Go 编译器，如果你还没有 go build，你需要首先下载 Go:
 * [Go 下载地址](https://golang.google.cn/doc/install)
+
 编译 NarakaOptimizerTool
 ```sh
 go build
