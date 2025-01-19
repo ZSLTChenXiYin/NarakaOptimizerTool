@@ -10,11 +10,18 @@
         <body>
             <form action="/initialization" method="post">
                 <label for="naraka_install_path">永劫无间安装路径:</label>
-                <input id="naraka_install_path" type="text" name="naraka_install_path" placeholder="LauncherGame.exe位置">
+                <input id="naraka_install_path" type="text" name="naraka_install_path" placeholder="游戏安装目录">
+                <label for="installation_platform">游戏安装渠道:</label>
+                <select id="installation_platform" name="installation_platform">
+                    <option value="official">网易官方</option>
+                    <option value="steam">Steam</option>
+                    <option value="epic">Epic</option>
+                    <option value="other">其他</option>
+                </select>
                 <label for="developer_mode">开发者模式:</label>
                 <select id="developer_mode" name="developer_mode">
-                    <option value="on">打开</option>
                     <option value="off">关闭</option>
+                    <option value="on">打开</option>
                 </select>
                 <input type="submit" value="初始化">
             </form>

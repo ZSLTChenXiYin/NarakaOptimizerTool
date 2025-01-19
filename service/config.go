@@ -69,6 +69,15 @@ func developerMode() bool {
 	return v.(bool)
 }
 
+func installationPlatform() string {
+	v, ok := config_map["InstallationPlatform"]
+	if !ok {
+		return ""
+	}
+
+	return v.(string)
+}
+
 func narakaInstallPath() string {
 	v, ok := config_map["NarakaInstallPath"]
 	if !ok {
@@ -80,6 +89,10 @@ func narakaInstallPath() string {
 
 func setDeveloperMode(mode bool) {
 	config_map["DeveloperMode"] = mode
+}
+
+func setInstallationPlatform(platform string) {
+	config_map["InstallationPlatform"] = platform
 }
 
 func setNarakaInstallPath(path string) {
